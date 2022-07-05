@@ -7,8 +7,6 @@ function draw() {
   background(imagemDaEstrada);
   mostraAtor();
   mostraCarro();
-  mostraCarro2();
-  mostraCarro3();
   movimentaCarro();
   movimentaAtor();
   voltaPosicaoInicialDoCarro();

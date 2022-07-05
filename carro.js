@@ -11,22 +11,15 @@ function movimentaCarro() {
   xCarros[2] = xCarros[2] -= velocidadeCarros[2];
 }
 
-let xCarros = [900,900,900];
+let xCarros = [800,900,900];
 let yCarros = [55,140,220];
 let velocidadeCarros = [5,8,6];
 
 // CARRO 1
 function mostraCarro(){
-  image(imagemCarros[0], xCarros[0], yCarros[0], larguraDoCarro, AlturaDoCarro);
+  for(let i = 0; i < imagemCarros.length; i = i + 1){
+    image(imagemCarros[i], xCarros[i], yCarros[i], larguraDoCarro, AlturaDoCarro);
 }
-
-// CARRO 2
-function mostraCarro2(){
-  image(imagemCarros[1], xCarros[1], yCarros[1], larguraDoCarro, AlturaDoCarro);
-}
-// CARRO 3
-function mostraCarro3(){
-  image(imagemCarros[2], xCarros[2], yCarros[2], larguraDoCarro, AlturaDoCarro);
 }
 
 function voltaPosicaoInicialDoCarro(){

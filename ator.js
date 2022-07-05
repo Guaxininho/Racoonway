@@ -3,6 +3,8 @@
 let xAtor = 80;
 let yAtor = 552;
 
+
+
 function mostraAtor(){
   image(imagemDoAtor, xAtor, yAtor, 40, 40 );
 }
@@ -13,6 +15,7 @@ function movimentaAtor() {
   }
   if (keyIsDown(DOWN_ARROW)){
     yAtor = yAtor += 3
+    
   }
 }
 
