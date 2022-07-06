@@ -6,14 +6,14 @@ let larguraDoCarro = 90;
 let AlturaDoCarro = 70;
 
 function movimentaCarro() {
-  xCarros[0] = xCarros[0] -= velocidadeCarros[0];
-  xCarros[1] = xCarros[1] -= velocidadeCarros[1];
-  xCarros[2] = xCarros[2] -= velocidadeCarros[2];
+  for(let i = 0; i < imagemCarros.length;  i = i + 1){
+    xCarros[i] = xCarros[i] -= velocidadeCarros[i];
+  }
 }
 
-let xCarros = [800,900,900];
-let yCarros = [55,140,220];
-let velocidadeCarros = [5,8,6];
+let xCarros = [900,900,900,700,700,700];
+let yCarros = [55,140,220,310,470,390];
+let velocidadeCarros = [5,8,6,9,3,7];
 
 // CARRO 1
 function mostraCarro(){
@@ -23,14 +23,10 @@ function mostraCarro(){
 }
 
 function voltaPosicaoInicialDoCarro(){
-  if (xCarros[0] < -120){
-    xCarros[0] = 900;
-  }
-  if (xCarros[1] < -120){
-    xCarros[1] = 900;
-  }
-  if (xCarros[2] < -120){
-    xCarros[2] = 900;
+  for(let i = 0; i < imagemCarros.length; i = i + 1){
+    if (xCarros[i] < -120){
+      xCarros[i] = 900;
+    }
   }
 }
 
